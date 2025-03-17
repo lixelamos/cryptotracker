@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
 import PricingPage from "./pages/Pricing/PricingPage";
-import Features from "./pages/Features/Feature";
+import Features from "./pages/Features/Features";
 import Footer from './components/Footer/Footer'
 
 const App = () => {

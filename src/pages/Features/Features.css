@@ -1,0 +1,56 @@
+/* Feature.css */
+.feature-section {
+    padding: 80px 20px;
+    background: #0f0f0f; /* Dark background for crypto theme */
+    text-align: center;
+  }
+  
+  .feature-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .feature-subheading {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+  
+  .feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
