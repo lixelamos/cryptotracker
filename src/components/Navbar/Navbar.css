@@ -1,73 +1,99 @@
-.navbar{
+/* Navbar.css */
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 10%;
-    color: #ddd;
-    border-bottom: 2px solid #3c3c3c;
-}
-.navbar .logo{
-    width: max(12vw, 120px);
-}
-.navbar ul{
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f0f0f; /* Dark background */
+    color: #fff;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  ul {
     display: flex;
-    gap: 40px;
     list-style: none;
-}
-.navbar li{
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    position: relative;
     cursor: pointer;
-}
-.nav-right{
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #00ff88;
+    transition: width 0.3s ease;
+  }
+  
+  ul li:hover {
+    background-color: rgba(0, 255, 136, 0.1); /* Semi-transparent background */
+    color: #00ff88;
+  }
+  
+  ul li:hover::after {
+    width: 100%;
+  }
+  
+  .nav-right {
     display: flex;
     align-items: center;
-    gap: max(1vw,12px);
-}
-.navbar select{
-    padding: 5px 8px;
-    border-radius: 6px;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-}
-.navbar option{
-    background-color: #09005c;
-    color: white;
-}
-.navbar button{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 25px;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #393939;
-    background: white;
+    gap: 20px;
+  }
+  
+  select {
+    background-color: #1e1e1e;
+    color: #fff;
     border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
     cursor: pointer;
-}
-.navbar button img{
-    width: 13px;
-}
-
-@media (max-width: 900px){
-    .navbar{
-        padding: 20px 8%;
-    }
-    .navbar button{
-        gap: 8px;
-        padding: 8px 18px;
-        font-size: 14px;
-    }
-}
-@media (max-width: 768px){
-    .navbar{
-        padding: 20px 5%;
-    }
-    .navbar ul{
-        display: none;
-    }
-    .navbar button img{
-        width: 12px;
-    }
-}
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  select:hover {
+    background-color: #00ff88;
+    color: #0f0f0f;
+  }
+  
+  button {
+    background: linear-gradient(90deg, #00ff88, #00cc6a);
+    color: #0f0f0f;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #00cc6a, #00ff88); /* Reverse gradient on hover */
+    transform: translateY(-2px);
+  }
+  
+  button img {
+    height: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover img {
+    transform: translateX(5px); /* Move the arrow icon to the right */
+  }
