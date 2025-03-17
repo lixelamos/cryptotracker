@@ -37,8 +37,8 @@ const Navbar = () => {
         </Link>
         <ul>
         <Link to={'/'}> <li>Home</li></Link>
-            <li>Features</li>
-            <li>Pricing</li>
+        <Link to="/features"><li>Features</li></Link>
+            <Link to="/pricing"><li>Pricing</li></Link>
             <li>Blog</li>
         </ul>
         <div className="nav-right">

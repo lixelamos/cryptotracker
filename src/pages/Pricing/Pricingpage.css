@@ -1,0 +1,136 @@
+/* Container */
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    background: #f9fafb;
+}
+
+/* Title */
+.pricing-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #111827;
+}
+
+/* Cards Grid */
+.pricing-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .pricing-cards {
+        flex-direction: row;
+    }
+}
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Plan-Specific Styling */
+.card.free {
+    border-color: #e5e7eb;
+}
+
+.card.pro {
+    border-color: #4f46e5;
+}
+
+.card.premium {
+    border-color: #d97706;
+}
+
+/* Price Styling */
+.card-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #111827;
+}
+
+/* Features List */
+.card-features {
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #374151;
+}
+
+.card-features li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-features li::before {
+    content: "✓";
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Buttons */
+.card-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    border: 1px solid transparent;
+}
+
+.card.free .card-button {
+    background: #f9fafb;
+    color: #111827;
+    border-color: #e5e7eb;
+}
+
+.card.pro .card-button {
+    background: #4f46e5;
+    color: white;
+}
+
+.card.premium .card-button {
+    background: #d97706;
+    color: white;
+}
+
+.card.free .card-button:hover {
+    background: #f3f4f6;
+}
+
+.card.pro .card-button:hover {
+    background: #4338ca;
+}
+
+.card.premium .card-button:hover {
+    background: #b45309;
+}
